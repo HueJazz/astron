@@ -6,23 +6,23 @@ import { Development } from '.././utils/constants'
 const Technologies= () => {
     
     return (
-        <div className="custom-px pt-5 custom-max-w mx-auto" id="technologies">
-            <div className="flex gap-5">
-                <div className="flex flex-col text-center justify-center basis-4/12 bg-blue-100 rounded-3xl py-4 px-12">
-                    <h2 className="text-4xl font-semibold pb-7 pt-4">TECHNOLOGY STACK</h2>
-                    <p className="text-xl font-thin">αstron stays abreast of the dynamic IT technology landscape and seamlessly adjusts to its evolution. Irrespective of the intricacy of our clients' project specifications, we are committed to addressing them. Whether it involves expertise at different levels or specific technology stacks for the positions they seek, we are ready to fulfill those needs.</p>
+        <div className="px-5 pt-5 max-w-custom mx-auto" id="technologies">
+            <div className="flex gap-5 lg:flex-row flex-col">
+                <div className="flex flex-col text-center justify-center basis-4/12 bg-blue-100 rounded-3xl py-6 px-12">
+                    <h2 className="lg:text-3xl 2xl:text-4xl sm:text-2xl font-semibold mb-4">TECHNOLOGY STACK</h2>
+                    <p className="2xl:text-xl sm:text-base text-sm font-thin 2xl:leading-7 leading-5">αstron stays abreast of the dynamic IT technology landscape and seamlessly adjusts to its evolution. Irrespective of the intricacy of our clients' project specifications, we are committed to addressing them. Whether it involves expertise at different levels or specific technology stacks for the positions they seek, we are ready to fulfill those needs.</p>
                 </div>
                 <div className="basis-8/12">
-                    <ul className="flex flex-col gap-5 text-white">
+                    <ul className="flex sm:flex-col flex-row sm:justify-start justify-center gap-4 text-white">
                         {Development.map((development) =>
-                            <li className="flex flex-rowjustify-end gap-5">
-                                <div className="flex basis-2/12 text-center py-2 min-w-40 justify-center items-center custom-bg rounded-3xl">
-                                    <h1 className="text-4xl font-base">{development.name}</h1>
+                            <li className="flex sm:flex-row flex-col gap-4">
+                                <div className="flex basis-3/12 text-center py-2 lg:min-w-36 sm:min-w-24 min-w-16 sm:max-h-fit max-h-10 justify-center items-center bg-custom sm:rounded-2xl rounded-xl">
+                                    <h1 className="lg:text-3xl 2xl:text-4xl sm:text-xl font-base">{development.name}</h1>
                                 </div>
-                                <ul className="basis-10/12 flex flex-row gap-3">
+                                <ul className="w-full flex sm:flex-row flex-col items-center gap-4">
                                     {development.technologies.map((technology) => 
-                                        <li className="basis-1/6 bg-gray-200 flex flex-row gap-5 rounded-3xl justify-center">
-                                            <img className="py-3 px-5 max-h-28" src={technology.img} alt={technology.name} />
+                                        <li className="w-[calc(20%-16px)] bg-gray-200 flex flex-row rounded-2xl justify-center">
+                                            <img className="py-1 px-2 lg:max-h-24 2xl:max-w-28 lg:max-w-20 sm:max-h-16 sm:max-w-16 max-h-12 max-w-12" src={technology.img} alt={technology.name} />
                                         </li>
                                     )}
                                 </ul>

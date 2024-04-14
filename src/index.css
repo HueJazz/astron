@@ -2,83 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom-text-color {
-    color: #306FBB;
-}
-
-.text-10xl {
-    font-size: 156px;
-    font-weight: 500;
-}
-
-.text-12xl {
-    font-size: 280px;
-    font-weight: 600;
-    line-height: 50%;
-}
-
-.custom-leading {
-    line-height: 200px;
-}
-
-.custom-bg {
-    background-color: #306FBB;
-}
-
-.custom-size {
-    font-size: 15px;
-}
-
-.custom-px {
-    padding-left: 22px;
-    padding-right: 22px;
-}
-
-.p-22 {
-    padding: 90px;
-}
-
-.custom-py {
-    padding-top: 113px;
-    padding-bottom: 8px;
-}
-
-.mt-23 {
-    margin-top: 90px;
-}
-
-.px-15 {
-    padding-left: 60px;
-    padding-right: 60px;
-}
-
-.py-15 {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.custom-max-w {
-    max-width: 1824px;
-}
-
-.custom-p {
-    padding: 13px 20px;
-}
-
-.custom-m {
-    margin: 5px 20px;
-}
-
-.banner {
-    height: calc(100vh - 140px);
-    max-height: 1000px;
-}
-
-.specialization {
-    height: 40vh;
-    max-height: 350px;
-}
-
 .about {
     display: flex;
     align-items: center;
@@ -92,10 +15,16 @@
     background-color: rgb(209 213 219); 
     margin-left: 10px;
 }
+@media screen and (min-width: 1024px) {
+    .swiper-pagination-bullet {
+      min-width: 14px !important;
+      min-height: 14px !important;
+    }
+  }
 
 .swiper-pagination-bullet {
-    min-width: 14px;
-    min-height: 14px;
+    min-width: 8px;
+    min-height: 8px;
     line-height: 10px;
     font-size: 12px;
     background: #306FBB !important;
