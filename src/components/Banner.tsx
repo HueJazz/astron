@@ -5,15 +5,15 @@ const Banner = () => {
 
     return (
         <div className="relative min-h-screen min-w-screen flex items-end overflow-hidden">
-            <div className="absolute min-w-max min-h-max right-1/2 translate-x-1/2">
-                <video className="brightness-75" muted loop autoPlay>
+            <div className="absolute inset-0 flex items-center justify-center">
+                <video className="object-cover w-full h-full brightness-75" muted loop autoPlay>
                     <source src={require(".././images/banner.mp4")} type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" />
-                </video> 
+                </video>
             </div>
             <div className="relative bottom-0 lg:mb-32 sm:mb-24 mb-16 w-full">
                 <div className="flex flex-row justify-between items-end max-w-custom mx-auto px-10 max-h-screen">
                     <div className="flex flex-col gap-6">
-                        <h1 className="lg:text-6xl 2xl:text-8xl sm:text-3xl text-xl text-white font-semibold">Guardians of your digital realm</h1>
+                        <h1 className="lg:text-6xl 2xl:text-8xl sm:text-3xl text-xl text-white font-semibold mt-36">Guardians of your digital realm</h1>
                         <p className="2xl:text-xl sm:text-base text-sm text-white w-8/12">Stay a Step Ahead of Cyber Threats with Revolutionary Cybersecurity Solutions from αstron. Safeguarding Your Data, One Click at a Time.</p>
                         <Link to="contact" spy={true} smooth={true} duration={750} key="contact">
                             <button className="sm:text-base text-sm transition bg-white rounded-3xl sm:px-6 sm:py-2 px-3 py-1 font-medium leading-6 hover:bg-custom hover:text-white">

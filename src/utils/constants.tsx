@@ -172,13 +172,13 @@ export const Businesses: Array<BusinessesType> = [
         title: "Healthcare"
     },
     {
-        title: "Energy&Resources"
+        title: "Energy & Resources"
     },
     {
         title: "Telecom, Media & Entertainment"
     },
     {
-        title: "Consumer&Retail"
+        title: "Consumer & Retail"
     },
     {
         title: "Startups, Software & Blockchain"

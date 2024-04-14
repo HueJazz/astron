@@ -12,7 +12,7 @@ const Expertise = () => {
                 index % 2 === 0 && (
                     <div key={index} className="flex lg:flex-nowrap flex-wrap gap-5 pt-5">
                         <div className="group relative lg:basis-1/2 basis-full rounded-3xl bg-custom overflow-hidden lg:h-[40vh] lg:max-h-[350px]" onMouseEnter={() => setHoveredItem(index)} onMouseLeave={() => setHoveredItem(null)}>
-                            <img className="absolute min-w-max min-h-max group-hover:-z-10 top-2 lg:right-0 left-0 scale-125" src={item.img} alt={item.title} />
+                            <img loading="lazy" className="absolute min-w-max min-h-max group-hover:-z-10 top-2 lg:right-0 left-0 scale-125" src={item.img} alt={item.title} />
                             <div className="flex flex-col lg:p-8 p-6 h-full justify-end">
                                 <h2 className="relative lg:text-3xl 2xl:text-4xl sm:text-xl font-base lg:mb-2 mb-1 w-10/12">{Specialization[index].title}</h2>
                                 <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all">
@@ -23,7 +23,7 @@ const Expertise = () => {
                         </div>
                         {index + 1 < Specialization.length && (
                             <div className="group relative lg:basis-1/2 basis-full rounded-3xl bg-custom overflow-hidden lg:h-[40vh] lg:max-h-[350px] h-auto" onMouseEnter={() => setHoveredItem(index + 1)} onMouseLeave={() => setHoveredItem(null)}>
-                                <img className="absolute min-w-max min-h-max left-0 top-0 group-hover:-z-10 lg:scale-100 scale-125" src={Specialization[index + 1].img} alt={Specialization[index + 1].title} />
+                                <img loading="lazy" className="absolute min-w-max min-h-max left-0 top-0 group-hover:-z-10 lg:scale-100 scale-125" src={Specialization[index + 1].img} alt={Specialization[index + 1].title} />
                                 <div className="flex flex-col lg:p-8 p-6 h-full justify-end">
                                     <h2 className="relative lg:text-3xl 2xl:text-4xl sm:text-xl font-base lg:mb-2 mb-1 w-10/12">{Specialization[index + 1].title}</h2>
                                     <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all">

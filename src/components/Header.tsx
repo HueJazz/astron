@@ -9,7 +9,6 @@ const Header = () => {
     const [selectedLanguage, setSelectedLanguage] = useState<string>('En')
     const [menuOpen, setMenuOpen] = useState<boolean>(false)
     
-
     return (
         <div className="absolute z-10 w-full">
             <div className="relative flex lg:justify-between justify-center max-w-custom mx-auto items-center px-5 lg:py-2.5 py-5">
@@ -22,8 +21,9 @@ const Header = () => {
                     onClick={() => {setMenuOpen(false); document.body.style.overflow = 'auto'}}
                     style={{ visibility: menuOpen ? 'visible' : 'hidden', opacity: menuOpen ? 1 : 0 }}>
                 </div>
-                <div className={`fixed top-0 left-0 sm:w-64 w-screen h-full bg-custom text-white z-50 transition transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-                    <ul className="flex flex-col gap-5 mt-5">
+                <div className={`fixed top-0 left-0 sm:w-64 w-screen h-full bg-custom text-white z-50 transition transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'}`}
+                    style={{ overflowY: menuOpen ? 'auto' : 'hidden' }}>                   
+                    <ul className="flex flex-col gap-5 my-5 overflow-auto">
                         <li className="sm:hidden flex flex-row justify-between mx-6 items-center">
                           <p className="text-5xl text-white font-semibold tracking-tighter scale-90 pb-3">αstron</p>
                           <svg className="fill-white h-8 w-8 cursor-pointer" onClick={() => {setMenuOpen(false); document.body.style.overflow = 'auto'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
@@ -75,10 +75,10 @@ const Header = () => {
                                 </li>
                             ))}
                             <ul className="flex flex-row bg-gray-200 bg-opacity-20 rounded-3xl mx-5 px-2 py-1 text-white">
-                                <li className={`cursor-pointer transition hover:brightness-[.80] ${selectedLanguage === "En" ? "bg-custom rounded-3xl" : ""}`} onClick={() => { setSelectedLanguage("En") }}>
+                                <li className={`cursor-pointer hover:brightness-[.80] rounded-3xl transition ${selectedLanguage === "En" ? "bg-custom" : ""}`} onClick={() => { setSelectedLanguage("En") }}>
                                     <p className="p-1.5 leading-4">En</p>
                                 </li>
-                                <li className={`cursor-pointer transition hover:brightness-[.80] ${selectedLanguage === "De" ? "bg-custom rounded-3xl cursor-pointer transition" : "cursor-pointer"}`} onClick={() => { setSelectedLanguage("De") }}>
+                                <li className={`cursor-pointer hover:brightness-[.80] rounded-3xl transition ${selectedLanguage === "De" ? "bg-custom" : ""}`} onClick={() => { setSelectedLanguage("De") }}>
                                     <p className="p-1.5 leading-4">De</p>
                                 </li>
                             </ul>

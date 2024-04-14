@@ -21,11 +21,11 @@ const About = () => {
                     </div>
                 </div>
                 <div className="basis-1/3 flex lg:flex-col flex-row justify-around bg-custom text-white rounded-3xl gap-4 lg:p-12 p-6">
-                    <div className="flex flex-col mb-2">
+                    <div className="flex flex-col basis-1/2 sm:basis-auto mb-2">
                         <h1 className="2xl:text-10xl lg:text-7xl sm:text-4xl text-2xl font-semibold">+8</h1>
                         <p className="2xl:text-xl sm:text-base text-sm">Years of experience</p>
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col basis-1/2 sm:basis-auto">
                         <h1 className="2xl:text-10xl lg:text-7xl sm:text-4xl text-2xl font-semibold">100%</h1>
                         <p className="2xl:text-xl sm:text-base text-sm ">Clients are ready to recommend us</p>
                     </div>

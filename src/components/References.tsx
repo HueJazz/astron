@@ -75,7 +75,7 @@ const References = () => {
                                         </div>
                                     </div>
                                     <div className="flex items-center flex-col basis-1/2 p-6">
-                                        <img className="rounded-3xl min-w-64" src={require(".././images/case_Suter.webp")}alt='more'></img>
+                                        <img loading="lazy" className="rounded-3xl min-w-64" src={require(".././images/case_Suter.webp")}alt='more'></img>
                                     </div>
                                 </div>
                             </SwiperSlide>
