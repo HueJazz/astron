@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/astron/static/css/main.627c32e3.css",
-    "main.js": "/astron/static/js/main.660dd253.js",
+    "main.css": "/astron/static/css/main.9d3071ee.css",
+    "main.js": "/astron/static/js/main.5e4d6062.js",
     "static/media/banner.mp4": "/astron/static/media/banner.ad2b9317a28e06d8e09c.mp4",
+    "static/media/stars.webp": "/astron/static/media/stars.9fc6be86ecc73a3b0ce0.webp",
     "static/media/qa.png": "/astron/static/media/qa.6f49ae62fc40315592a6.png",
     "static/media/cybersecurity.png": "/astron/static/media/cybersecurity.ef7806f0a47cd7075aa5.png",
     "static/media/uiux.png": "/astron/static/media/uiux.4e582bea6f98eec97afa.png",
     "static/media/product_engineer.png": "/astron/static/media/product_engineer.3328fe3ae41c5181f07c.png",
     "static/media/case_Suter.webp": "/astron/static/media/case_Suter.cbe2f0c9d85b0da494eb.webp",
     "index.html": "/astron/index.html",
-    "main.627c32e3.css.map": "/astron/static/css/main.627c32e3.css.map",
-    "main.660dd253.js.map": "/astron/static/js/main.660dd253.js.map"
+    "main.9d3071ee.css.map": "/astron/static/css/main.9d3071ee.css.map",
+    "main.5e4d6062.js.map": "/astron/static/js/main.5e4d6062.js.map"
   },
   "entrypoints": [
-    "static/css/main.627c32e3.css",
-    "static/js/main.660dd253.js"
+    "static/css/main.9d3071ee.css",
+    "static/js/main.5e4d6062.js"
   ]
 }
