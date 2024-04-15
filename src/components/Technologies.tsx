@@ -16,7 +16,7 @@ const Technologies= () => {
                     <ul className="flex sm:flex-col flex-row sm:justify-start justify-center sm:gap-4 gap-[1.5vw] text-white">
                         {Development.map((development) =>
                             <li className="flex sm:flex-row flex-col gap-4">
-                                <div className="flex basis-3/12 text-center py-2 lg:min-w-36 sm:min-w-24 min-w-16 px-0.5 sm:max-h-fit max-h-10 justify-center items-center bg-custom sm:rounded-2xl rounded-xl">
+                                <div className="flex basis-3/12 text-center py-2 lg:min-w-36 sm:min-w-24 min-w-16 px-0.5 sm:max-h-full max-h-10 justify-center items-center bg-custom sm:rounded-2xl rounded-xl">
                                     <h1 className="lg:text-3xl 2xl:text-4xl sm:text-xl font-base">{development.name}</h1>
                                 </div>
                                 <ul className="w-full flex sm:flex-row flex-col items-center gap-4">

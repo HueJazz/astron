@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Link } from "react-scroll";
 
 const Banner = () => {
@@ -6,11 +6,12 @@ const Banner = () => {
     return (
         <div className="relative min-h-screen min-w-screen flex items-end overflow-hidden">
             <div className="absolute inset-0 flex items-center justify-center">
+                <img className="absolute object-cover w-full h-full brightness-75" src={require('.././images/stars.webp')}></img>
                 <video className="object-cover w-full h-full brightness-75" muted loop autoPlay>
-                    <source src={require(".././images/banner.mp4")} type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" />
+                    <source src={require(".././images/banner.mp4")} type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"/>
                 </video>
             </div>
-            <div className="relative bottom-0 lg:mb-32 sm:mb-24 mb-16 w-full">
+            <div className="relative bottom-0 lg:mb-28 mb-20 w-full">
                 <div className="flex flex-row justify-between items-end max-w-custom mx-auto px-10 max-h-screen">
                     <div className="flex flex-col gap-6">
                         <h1 className="lg:text-6xl 2xl:text-8xl sm:text-3xl text-xl text-white font-semibold mt-36">Guardians of your digital realm</h1>
